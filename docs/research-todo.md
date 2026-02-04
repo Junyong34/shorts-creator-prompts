@@ -47,6 +47,24 @@
 
 ---
 
+
+**주요 도구별 개별 특징**
+
+- **Google Veo (모델 엔진)**
+    - Google DeepMind의 최첨단 영상 생성 모델로, 텍스트와 이미지로부터 고화질(4K급) 시네마틱 영상을 생성합니다.
+    - 영상 내 물리 법칙, 조명, 질감을 정교하게 이해하며 자연스러운 움직임을 구현하는 데 집중합니다.
+    - 주로 API나 Vertex AI를 통해 제공되며, 전문적인 영상 생성 기술의 근간이 됩니다.
+
+- **Google Flow (제작 플랫폼)**
+    - 일반 사용자와 크리에이터가 웹상에서 직관적으로 영상을 제작할 수 있도록 설계된 인터페이스 도구입니다.
+    - 단순히 영상을 만드는 것을 넘어 여러 장면을 연결하고, 등장인물(캐릭터)의 일관성을 유지하며 시퀀스를 구성하는 워크플로우를 제공합니다.
+    - Google Labs(VideoFX) 환경에서 대화형 인터페이스를 통해 복잡한 설정 없이 창의적인 비디오를 쉽고 빠르게 제작할 수 있게 돕습니다.
+
+- **Nanobanana (이미지-비디오 특화)**
+    - Google의 Gemini/Veo 기술을 기반으로 구축된 것으로 추정되는 서비스로, 특히 이미지 내의 캐릭터나 스타일을 유지한 채 비디오로 변환하는 데 강점이 있습니다.
+    - 사용자 친화적인 UI를 통해 비교적 저렴한 크레딧 방식으로 쉽고 빠르게 비디오 콘텐츠를 생산할 수 있는 것이 특징입니다.
+
+
 ## 2) 자막 및 자동 번역 AI Tools 
 
 ### TODO
@@ -58,7 +76,19 @@
 ### 비교표
 | Tool | Price/Plan | Trial | Ease | Languages | Quality | Max Duration | Export/Format | Watermark/License | API/Integration | Notes | Score(1-5) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  |  |  |  |  |  |  |  |  |  |  |
+| **Google Cloud STT** | Usage-based | $300 Credit | Mid/High | 125+ | High | Unlimited | SRT, VTT, JSON | Custom | Yes (API) | 동영상 자막 추출 및 번역 최적화, 최신 Chirp 모델 지원 | 4.8 |
+| **Vertex AI Studio** | Usage-based | $300 Credit | Mid | Multi | High | File size limit | SRT, Text | Custom | Yes | Gemini 모델을 활용한 비디오 분석 및 자막 생성 가능 | 4.5 |
+
+**자막 및 번역 도구별 개별 특징**
+
+- **Google Cloud STT (Speech-to-Text)**
+    - 전문적인 오디오 전사 도구로, 동영상 파일에서 음성을 추출하여 SRT, VTT 등 표준 자막 파일로 변환하는 데 최적화되어 있습니다.
+    - 최신 Chirp 모델을 통해 배경 소음이 있는 환경에서도 높은 정확도를 유지하며, 125개 이상의 언어를 지원합니다.
+
+- **Vertex AI Studio (비디오 분석형 자막)**
+    - Gemini 모델의 멀티모달 능력을 활용하여 영상의 시각적 맥락과 음성을 동시에 분석, 단순 전사보다 정확한 문맥 기반 자막을 생성합니다.
+    - 별도의 복잡한 API 연동 없이 Google Cloud 콘솔에서 비디오 파일을 직접 업로드하여 자막 결과물을 뽑아낼 수 있습니다.
+
 
 ---
 
@@ -73,7 +103,19 @@
 ### 비교표
 | Tool | Price/Plan | Trial | Ease | Languages | Quality | Max Duration | Export/Format | Watermark/License | API/Integration | Notes | Score(1-5) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  |  |  |  |  |  |  |  |  |  |  |
+| **Google Cloud TTS** | Usage-based | $300 Credit | Mid | 75+ (380+ voices) | Very High | 1M+ chars | MP3, WAV, OGG | Custom | Yes (API) | Gemini-TTS, Chirp 3 등 인간에 가까운 감정 표현 가능 | 4.9 |
+| **Gemini API (TTS)** | Usage-based | Free tier avail. | High | Multi | High | Short/Long | Audio stream | Custom | Yes | 자연어 프롬프트로 억양, 속도, 톤 미세 조정 가능 | 4.7 |
+
+**음성 생성 도구별 개별 특징**
+
+- **Google Cloud TTS (Text-to-Speech)**
+    - 380개 이상의 풍부한 보이스를 제공하며, 특히 'Chirp 3' 모델은 웃음소리, 머뭇거림 등 인간 특유의 비언어적 표현까지 자연스럽게 구현합니다.
+    - 대규모 텍스트 전사 및 전문적인 성우 오디오 제작에 적합하며, SSML 지원을 통해 발음을 정밀하게 교정할 수 있습니다.
+
+- **Gemini API (멀티모달 음성)**
+    - "부끄러운 듯이 말해줘", "기쁜 목소리로 속도를 높여줘"와 같은 일상적인 명령어로 음성의 톤과 감정을 조절할 수 있습니다.
+    - 최신 멀티모달 기술이 적용되어 단순 낭독을 넘어 대화의 맥락에 맞는 가장 자연스러운 감정선을 스스로 찾아 음성을 생성합니다.
+
 
 ---
 

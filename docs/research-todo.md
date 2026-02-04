@@ -30,7 +30,24 @@
 
 ---
 
-## 1) 숏츠/동영상 제작 AI Tools (담당: Mango)
+## 1) 숏츠/동영상 제작 AI Tools 
+
+### TODO
+- [ ] 후보 도구 3~5개 리스트업
+- [ ] 공통 체크리스트 항목 조사
+- [ ] 비교표 작성
+- [ ] 최종 추천 1~2개와 이유 정리
+
+### 비교표
+| Tool | Price/Plan | Trial | Ease | Languages | Quality | Max Duration | Export/Format | Watermark/License | API/Integration | Notes | Score(1-5) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Google Veo (Veo3)** | Vertex AI ($0.75/s), AI Pro($19.99) | Cloud Credit ($300) | Mid/High | Multi (Gemini) | High (4K, Cinematic) | 8s+ (Extendable) | MP4 (1080p+) | SynthID (Invisible) | Yes (Vertex AI) | Google DeepMind 최신 모델, Native Audio 지원 | 4.9 |
+| **Nanobanana** | Credit ($9.99/mo~), ~1-2c/sec | Free w/ limit | High | Eng | Mid/High | 5s~Continuous | MP4 | Yes (Free) | Limited | Google Gemini/Veo 기반 Wrapper 추정, 이미지-비디오 강점 | 3.8 |
+| **Google Flow (VideoFX)** | Google AI Premium ($19.99/mo) | Labs Access | High | Eng/Multi | High (Veo 기반) | Short clips (Loop/Extend) | MP4 | Yes (SynthID) | No (Consumer) | Veo/Imagen 모델 사용 가능한 일반 사용자용 UI Tools | 4.7 |
+
+---
+
+## 2) 자막 및 자동 번역 AI Tools 
 
 ### TODO
 - [ ] 후보 도구 3~5개 리스트업
@@ -45,22 +62,7 @@
 
 ---
 
-## 2) 자막 및 자동 번역 AI Tools (담당: Orbit)
-
-### TODO
-- [ ] 후보 도구 3~5개 리스트업
-- [ ] 공통 체크리스트 항목 조사
-- [ ] 비교표 작성
-- [ ] 최종 추천 1~2개와 이유 정리
-
-### 비교표
-| Tool | Price/Plan | Trial | Ease | Languages | Quality | Max Duration | Export/Format | Watermark/License | API/Integration | Notes | Score(1-5) |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  |  |  |  |  |  |  |  |  |  |  |
-
----
-
-## 3) 음성 생성 AI Tools (담당: Raven)
+## 3) 음성 생성 AI Tools
 
 ### TODO
 - [ ] 후보 도구 3~5개 리스트업

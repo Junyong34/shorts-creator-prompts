@@ -44,6 +44,8 @@
 | **Google Veo (Veo3)** | Vertex AI ($0.75/s), AI Pro($19.99) | Cloud Credit ($300) | Mid/High | Multi (Gemini) | High (4K, Cinematic) | 8s+ (Extendable) | MP4 (1080p+) | SynthID (Invisible) | Yes (Vertex AI) | Google DeepMind 최신 모델, Native Audio 지원 | 4.9 |
 | **Nanobanana** | Credit ($9.99/mo~), ~1-2c/sec | Free w/ limit | High | Eng | Mid/High | 5s~Continuous | MP4 | Yes (Free) | Limited | Google Gemini/Veo 기반 Wrapper 추정, 이미지-비디오 강점 | 3.8 |
 | **Google Flow (VideoFX)** | Google AI Premium ($19.99/mo) | Labs Access | High | Eng/Multi | High (Veo 기반) | Short clips (Loop/Extend) | MP4 | Yes (SynthID) | No (Consumer) | Veo/Imagen 모델 사용 가능한 일반 사용자용 UI Tools | 4.7 |
+| **Higgsfield AI** | Free ($0), Basic (~$9), Pro (~$29), Ultimate (~$49) | Free w/ limit | High | multi | High (Cinematic) | 5s+ | MP4 (up to 720p) | Yes (Free) | Yes (Creator Plan) | Cinematic motion control 강점, Kling/Sora/Veo 등 다양한 모델 통합 | 4.6 |
+
 
 ---
 
@@ -63,6 +65,12 @@
 - **Nanobanana (이미지-비디오 특화)**
     - Google의 Gemini/Veo 기술을 기반으로 구축된 것으로 추정되는 서비스로, 특히 이미지 내의 캐릭터나 스타일을 유지한 채 비디오로 변환하는 데 강점이 있습니다.
     - 사용자 친화적인 UI를 통해 비교적 저렴한 크레딧 방식으로 쉽고 빠르게 비디오 콘텐츠를 생산할 수 있는 것이 특징입니다.
+
+- **Higgsfield AI (시네마틱 컨트롤 특화)**
+    - 70개 이상의 전문 카메라 워킹(Dolly, Whip Pan, Drone 등)을 제공하여 영화 같은 연출이 가능한 AI 영상 제작 플랫폼입니다.
+    - Kling 2.6, Sora 2, Veo 3.1 등 시장의 주요 SOTA 모델들을 하나의 구독으로 이용할 수 있는 '멀티 모델 통합'이 핵심 강점입니다.
+    - 'Cinema Studio' 기능을 통해 조명, 앵글, 모션을 세밀하게 조정할 수 있어, 단순 생성을 넘어 '디렉팅'이 가능한 환경을 제공합니다.
+
 
 
 ## 2) 자막 및 자동 번역 AI Tools 

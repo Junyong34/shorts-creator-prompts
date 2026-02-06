@@ -1,0 +1,80 @@
+{
+    "schema": "nanobanana.prompt.reusable.v2.1",
+    "profile": "glassmorphism_claymorphism_iso",
+    "meta_config": {
+        "description": "Exquisite 3D isometry in Glassmorphism and Soft Claymorphism",
+        "version": "3.0"
+    },
+    "editable": {
+        "objective": {
+            "goal": "Create a 3D isometric image in Glassmorphism and Soft Claymorphism styles.",
+            "camera_angle": "45deg",
+            "date_text": "06.02.2026"
+        },
+        "subject": {
+            "mode": "hybrid",
+            "input_schema": {
+                "manual": {
+                    "label": "Center Object",
+                    "description": "Manually list the central object(s).",
+                    "default": []
+                },
+                "reference_image": {
+                    "label": "Image Extraction",
+                    "description": "Upload a photo of the object.",
+                    "extraction_instruction": "Analyze the uploaded image. Identify food ingredients vs non-food items. Keep food photo-realistic but slightly vary/refine their shape and arrangement (do not copy exactly). Apply Glassmorphism styles ONLY to non-food items (bowls, tools)."
+                }
+            },
+            "data": {
+                "manual_items": [
+                    "[VARIABLE_OBJECT]"
+                ],
+                "uploaded_image_context": {
+                    "has_image": true,
+                    "visual_reference_strength": 0.8
+                }
+            },
+            "placement_rule": "Render food/ingredients with photo-realistic textures but slightly modified forms/arrangement (do not replicate uploaded image exactly). Apply Glassmorphism styling ONLY to non-food items. Do NOT apply glass filters to food."
+        },
+        "constraints": {
+            "must_include": [
+                "Exquisite 3D Isometry (45deg)",
+                "Glassmorphism & Soft Claymorphism",
+                "Subtle white inner glow to simulate glass edges",
+                "Soft rounded corners with Apple-style squircles",
+                "Abstract symbols/iconography instead of text"
+            ],
+            "must_not_include": [
+                "Flat 2D elements",
+                "Opaque generic plastics",
+                "Low resolution textures",
+                "Cluttered background",
+                "Korean text (Hangul)",
+                "Legible text or characters (use abstract shapes only)"
+            ]
+        }
+    },
+    "fixed_profile": {
+        "style": "Exquisite 3D isometry (45 deg angle) in Glassmorphism and Soft Claymorphism.",
+        "materials_layers_geometry": [
+            "Frosted glass with strong background blur (Non-food items only)",
+            "Subtle white inner glow to simulate glass edges (Non-food items only)",
+            "Multi-layered transparent composition creating depth",
+            "Soft rounded corners with Apple-style squircles",
+            "Food/Ingredients: Hyper-realistic textures with slight shape variations (No glass effect)"
+        ],
+        "ui": "None. Pure composition without floating panels or dashboards.",
+        "surroundings": "Highly detailed refined surface reflections on glass. Abstract and minimal translucent glass objects.",
+        "technical": [
+            "Soft studio lighting",
+            "Effects: Caustics, Global illumination",
+            "Background: #B0E0E6 (Monotone powder-blue)",
+            "Software: Cinema 4D",
+            "Engine: Octane Render",
+            "Resolution: 8K",
+            "Quality: Ultra-detailed",
+            "Style: Pure minimalism"
+        ]
+    },
+    "renderer_output_template": "Objective: {{editable.objective.goal}} Camera: {{editable.objective.camera_angle}}. Description: {{editable.subject.placement_rule}}. Subject: {{resolved_subject_string}}. Style: {{fixed_profile.style}}. Visuals: {{fixed_profile.materials_layers_geometry}}. UI/Interface: {{fixed_profile.ui}}. Surroundings: {{fixed_profile.surroundings}}. Technical: {{fixed_profile.technical}}. Constraints: {{editable.constraints.must_include}}. Exclude: {{editable.constraints.must_not_include}}."
+}
